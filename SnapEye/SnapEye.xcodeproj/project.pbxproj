@@ -12,13 +12,6 @@
 		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; };
 		800CB59D1EA25E2D00356366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800CB59C1EA25E2D00356366 /* Assets.xcassets */; };
 		800CB5A01EA25E2D00356366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB59E1EA25E2D00356366 /* LaunchScreen.storyboard */; };
-		800CB5B41EA2614500356366 /* button_send.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5A81EA2614500356366 /* button_send.png */; };
-		800CB5B51EA2614500356366 /* button_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5A91EA2614500356366 /* button_done.png */; };
-		800CB5B61EA2614500356366 /* button_retake-request.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AA1EA2614500356366 /* button_retake-request.png */; };
-		800CB5B71EA2614500356366 /* button_confirm.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AB1EA2614500356366 /* button_confirm.png */; };
-		800CB5B81EA2614500356366 /* button_set-here.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AC1EA2614500356366 /* button_set-here.png */; };
-		800CB5B91EA2614500356366 /* button_eyes-for-others.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AD1EA2614500356366 /* button_eyes-for-others.png */; };
-		800CB5BA1EA2614500356366 /* button_looking-for-eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AE1EA2614500356366 /* button_looking-for-eyes.png */; };
 		800CB5BB1EA2614500356366 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5AF1EA2614500356366 /* main.png */; };
 		800CB5BC1EA2614500356366 /* Slide_Bkgrd1.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5B01EA2614500356366 /* Slide_Bkgrd1.png */; };
 		800CB5BD1EA2614500356366 /* sl0927hwb2e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5B11EA2614500356366 /* sl0927hwb2e.jpg */; };
@@ -34,13 +27,6 @@
 		800CB59C1EA25E2D00356366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		800CB59F1EA25E2D00356366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		800CB5A11EA25E2D00356366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		800CB5A81EA2614500356366 /* button_send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_send.png; path = ../../Downloads/button_send.png; sourceTree = "<group>"; };
-		800CB5A91EA2614500356366 /* button_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_done.png; path = ../../Downloads/button_done.png; sourceTree = "<group>"; };
-		800CB5AA1EA2614500356366 /* button_retake-request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_retake-request.png"; path = "../../Downloads/button_retake-request.png"; sourceTree = "<group>"; };
-		800CB5AB1EA2614500356366 /* button_confirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_confirm.png; path = ../../Downloads/button_confirm.png; sourceTree = "<group>"; };
-		800CB5AC1EA2614500356366 /* button_set-here.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_set-here.png"; path = "../../Downloads/button_set-here.png"; sourceTree = "<group>"; };
-		800CB5AD1EA2614500356366 /* button_eyes-for-others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_eyes-for-others.png"; path = "../../Downloads/button_eyes-for-others.png"; sourceTree = "<group>"; };
-		800CB5AE1EA2614500356366 /* button_looking-for-eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button_looking-for-eyes.png"; path = "../../Downloads/button_looking-for-eyes.png"; sourceTree = "<group>"; };
 		800CB5AF1EA2614500356366 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = ../../Downloads/main.png; sourceTree = "<group>"; };
 		800CB5B01EA2614500356366 /* Slide_Bkgrd1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Slide_Bkgrd1.png; path = ../../Downloads/Slide_Bkgrd1.png; sourceTree = "<group>"; };
 		800CB5B11EA2614500356366 /* sl0927hwb2e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sl0927hwb2e.jpg; path = ../../Downloads/sl0927hwb2e.jpg; sourceTree = "<group>"; };
@@ -92,13 +78,6 @@
 		800CB5A71EA2612C00356366 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				800CB5A81EA2614500356366 /* button_send.png */,
-				800CB5A91EA2614500356366 /* button_done.png */,
-				800CB5AA1EA2614500356366 /* button_retake-request.png */,
-				800CB5AB1EA2614500356366 /* button_confirm.png */,
-				800CB5AC1EA2614500356366 /* button_set-here.png */,
-				800CB5AD1EA2614500356366 /* button_eyes-for-others.png */,
-				800CB5AE1EA2614500356366 /* button_looking-for-eyes.png */,
 				800CB5AF1EA2614500356366 /* main.png */,
 				800CB5B01EA2614500356366 /* Slide_Bkgrd1.png */,
 				800CB5B11EA2614500356366 /* sl0927hwb2e.jpg */,
@@ -167,20 +146,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				800CB5B51EA2614500356366 /* button_done.png in Resources */,
-				800CB5BA1EA2614500356366 /* button_looking-for-eyes.png in Resources */,
-				800CB5B61EA2614500356366 /* button_retake-request.png in Resources */,
 				800CB5A01EA25E2D00356366 /* LaunchScreen.storyboard in Resources */,
 				800CB5BF1EA2614500356366 /* camera.png in Resources */,
 				800CB59D1EA25E2D00356366 /* Assets.xcassets in Resources */,
 				800CB5BE1EA2614500356366 /* video.png in Resources */,
 				800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */,
 				800CB5BC1EA2614500356366 /* Slide_Bkgrd1.png in Resources */,
-				800CB5B71EA2614500356366 /* button_confirm.png in Resources */,
-				800CB5B81EA2614500356366 /* button_set-here.png in Resources */,
-				800CB5B91EA2614500356366 /* button_eyes-for-others.png in Resources */,
 				800CB5BB1EA2614500356366 /* main.png in Resources */,
-				800CB5B41EA2614500356366 /* button_send.png in Resources */,
 				800CB5BD1EA2614500356366 /* sl0927hwb2e.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

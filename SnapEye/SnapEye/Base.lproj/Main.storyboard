@@ -20,29 +20,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slide_Bkgrd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecV-We-dhj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-EB-NyL">
+                                <rect key="frame" x="51" y="129" width="273" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxa-Sq-ndr">
+                                <rect key="frame" x="82" y="476" width="211" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50504153966903687" green="0.60906195640563965" blue="0.91187888383865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Looking For Eyes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-by-khl">
+                                <rect key="frame" x="82" y="539" width="211" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50504153966903687" green="0.60906195640563965" blue="0.91187888383865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Eyes For Others">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SnapEye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Js-sOr">
+                                <rect key="frame" x="67" y="40" width="241" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.96461206674575806" green="0.97395545244216919" blue="0.89478880167007446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="34.632683658170919"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="WjY-JN-tGd">
+        <scene sceneID="dnI-YO-xOd">
             <objects>
-                <viewController id="ml1-GH-Oxu" sceneMemberID="viewController">
+                <viewController id="Sv7-Jy-sZk" customClass="ViewController" customModule="SnapEye" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZRJ-mJ-CX4"/>
-                        <viewControllerLayoutGuide type="bottom" id="YFb-Oj-Ega"/>
+                        <viewControllerLayoutGuide type="top" id="n0m-63-GOP"/>
+                        <viewControllerLayoutGuide type="bottom" id="bLQ-9h-cgV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tn2-j1-ltN">
+                    <view key="view" contentMode="scaleToFill" id="Cfh-uX-4IV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slide_Bkgrd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-ey-gSD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKH-Df-qPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWO-Bt-Njv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="38"/>
+            <point key="canvasLocation" x="778" y="35"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Slide_Bkgrd1.png" width="1142" height="472"/>
+        <image name="main.png" width="868" height="874"/>
+    </resources>
 </document>
