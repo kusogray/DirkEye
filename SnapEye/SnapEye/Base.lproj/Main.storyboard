@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +20,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Slide_Bkgrd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecV-We-dhj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slide_Bkgrd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecV-We-dhj">
+                                <rect key="frame" x="-728" y="-1295" width="1142" height="2031"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ecV-We-dhj" secondAttribute="height" multiplier="375:667" id="iSi-pV-9LM"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-EB-NyL">
-                                <rect key="frame" x="51" y="129" width="273" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SnapEye" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Js-sOr">
+                                <rect key="frame" x="87" y="41" width="241" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="eQV-2x-1g3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.96461206674575806" green="0.97395545244216919" blue="0.89478880167007446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-EB-NyL">
+                                <rect key="frame" x="71" y="155" width="273" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gag-EB-NyL" secondAttribute="height" multiplier="273:250" id="9cv-ec-cNA"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxa-Sq-ndr">
-                                <rect key="frame" x="82" y="476" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxa-Sq-ndr">
+                                <rect key="frame" x="102" y="446" width="211" height="30"/>
                                 <color key="backgroundColor" red="0.50504153966903687" green="0.60906195640563965" blue="0.91187888383865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Looking For Eyes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,28 +54,36 @@
                                     <segue destination="Sv7-Jy-sZk" kind="show" id="Aa4-Dd-Hng"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-by-khl">
-                                <rect key="frame" x="82" y="539" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-by-khl">
+                                <rect key="frame" x="102" y="509" width="211" height="30"/>
                                 <color key="backgroundColor" red="0.50504153966903687" green="0.60906195640563965" blue="0.91187888383865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Eyes For Others">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SnapEye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Js-sOr">
-                                <rect key="frame" x="67" y="40" width="241" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.96461206674575806" green="0.97395545244216919" blue="0.89478880167007446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="63Z-Js-sOr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="4xs-Yv-hHF"/>
+                            <constraint firstItem="63Z-Js-sOr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="51T-vm-m2Z"/>
+                            <constraint firstItem="63Z-Js-sOr" firstAttribute="centerX" secondItem="jqn-by-khl" secondAttribute="centerX" id="7C1-dz-kvP"/>
+                            <constraint firstItem="jqn-by-khl" firstAttribute="top" secondItem="hxa-Sq-ndr" secondAttribute="bottom" constant="33" id="7Qm-CK-eg0"/>
+                            <constraint firstItem="hxa-Sq-ndr" firstAttribute="top" secondItem="Gag-EB-NyL" secondAttribute="bottom" constant="41" id="C2u-PG-BnL"/>
+                            <constraint firstItem="Gag-EB-NyL" firstAttribute="top" secondItem="63Z-Js-sOr" secondAttribute="bottom" constant="53" id="GcB-ND-gP5"/>
+                            <constraint firstItem="63Z-Js-sOr" firstAttribute="centerX" secondItem="hxa-Sq-ndr" secondAttribute="centerX" id="IdR-TM-d9A"/>
+                            <constraint firstItem="jqn-by-khl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="82" id="Kyi-dM-hB7"/>
+                            <constraint firstAttribute="trailing" secondItem="ecV-We-dhj" secondAttribute="trailing" id="MDF-qA-KeQ"/>
+                            <constraint firstItem="ecV-We-dhj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="RmQ-n1-48A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gag-EB-NyL" secondAttribute="trailing" constant="50" id="gIk-bu-bd0"/>
+                            <constraint firstItem="Gag-EB-NyL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="pWi-YH-VNt"/>
+                            <constraint firstItem="63Z-Js-sOr" firstAttribute="centerX" secondItem="Gag-EB-NyL" secondAttribute="centerX" id="smT-BM-wQj"/>
+                            <constraint firstItem="jqn-by-khl" firstAttribute="width" secondItem="hxa-Sq-ndr" secondAttribute="width" id="snG-t5-XvG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="34.632683658170919"/>
+            <point key="canvasLocation" x="31.875" y="33.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dnI-YO-xOd">
@@ -75,35 +94,29 @@
                         <viewControllerLayoutGuide type="bottom" id="bLQ-9h-cgV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cfh-uX-4IV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slide_Bkgrd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-ey-gSD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank_img.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cH-aq-eC9">
-                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe the pictures you want to take..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-yW-qPz">
+                                <rect key="frame" x="0.0" y="545" width="414" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-yW-qPz">
-                                <rect key="frame" x="0.0" y="489" width="375" height="148"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GHv-Bc-I5e">
-                                <rect key="frame" x="272" y="637" width="103" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" 10" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" background="blank_img.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GHv-Bc-I5e">
+                                <rect key="frame" x="325" y="507" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="K45-1E-Zus">
-                                <rect key="frame" x="239" y="640" width="25" height="25"/>
+                                <rect key="frame" x="281" y="510" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -112,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWO-Bt-Njv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.79999999999995" y="34.632683658170919"/>
+            <point key="canvasLocation" x="775.36231884057975" y="34.239130434782609"/>
         </scene>
     </scenes>
     <resources>

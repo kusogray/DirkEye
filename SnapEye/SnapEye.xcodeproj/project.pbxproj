@@ -331,6 +331,7 @@
 				800CB5A61EA25E2D00356366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
