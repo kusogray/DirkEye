@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,6 +50,9 @@
                                 <state key="normal" title="Eyes For Others">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NFW-63-9t3" kind="show" id="stG-ST-qwF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SnapEye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Js-sOr">
                                 <rect key="frame" x="67" y="40" width="241" height="61"/>
@@ -114,10 +117,46 @@
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="34.632683658170919"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="AKO-Ki-frl">
+            <objects>
+                <viewController id="NFW-63-9t3" customClass="ViewController" customModule="SnapEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xuB-WG-LRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="k0p-8c-xqN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ek2-cJ-jpN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="uxy-Bq-778">
+                                <rect key="frame" x="28" y="198" width="319" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao7-VT-B3y">
+                                <rect key="frame" x="60" y="217" width="254" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="JdV-uq-CHd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Tl-9l-c2A" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="725.48725637181417"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Slide_Bkgrd1.png" width="1142" height="472"/>
         <image name="blank_img.jpg" width="616" height="357"/>
+        <image name="camera.png" width="256" height="256"/>
         <image name="gold.png" width="397" height="480"/>
         <image name="main.png" width="868" height="874"/>
     </resources>
