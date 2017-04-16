@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B532E91EA3589A0070EB8C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */; };
+		35B532EB1EA358B90070EB8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */; };
 		800CB5961EA25E2D00356366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5951EA25E2D00356366 /* AppDelegate.swift */; };
 		800CB5981EA25E2D00356366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5971EA25E2D00356366 /* ViewController.swift */; };
 		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		800CB5921EA25E2D00356366 /* SnapEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CB5951EA25E2D00356366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		800CB5971EA25E2D00356366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,18 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B532EB1EA358B90070EB8C /* MobileCoreServices.framework in Frameworks */,
+				35B532E91EA3589A0070EB8C /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B532E71EA3589A0070EB8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */,
+				35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		800CB5891EA25E2D00356366 = {
 			isa = PBXGroup;
 			children = (
 				800CB5A71EA2612C00356366 /* Images */,
 				800CB5941EA25E2D00356366 /* SnapEye */,
 				800CB5931EA25E2D00356366 /* Products */,
+				35B532E71EA3589A0070EB8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +138,7 @@
 				TargetAttributes = {
 					800CB5911EA25E2D00356366 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = JFDT9S38B6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -292,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JFDT9S38B6;
 				INFOPLIST_FILE = SnapEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SnapEye;
@@ -304,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JFDT9S38B6;
 				INFOPLIST_FILE = SnapEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SnapEye;
