@@ -107,8 +107,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="546"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the pictures you want to take..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-yW-qPz">
-                                <rect key="frame" x="0.0" y="545" width="375" height="122"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="userDesInputField" text="Describe the pictures you want to take..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Sv-yW-qPz">
+                                <rect key="frame" x="0.0" y="545" width="414" height="191"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -156,6 +156,10 @@
                             <constraint firstItem="A4v-ey-gSD" firstAttribute="leading" secondItem="Cfh-uX-4IV" secondAttribute="leading" id="wAK-my-ZVS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textBottom" destination="7Sv-yW-qPz" id="fQI-aw-IRh"/>
+                        <outlet property="userDesInputField" destination="7Sv-yW-qPz" id="A7s-ja-fRZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWO-Bt-Njv" sceneMemberID="firstResponder"/>
             </objects>
