@@ -21,6 +21,7 @@
 		800CB5CE1EA3475C00356366 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5C91EA3475C00356366 /* camera.png */; };
 		800CB5D01EA347C400356366 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5CF1EA347C400356366 /* gold.png */; };
 		80BEDE351EA3DFE900C0C5D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BEDE341EA3DFE900C0C5D1 /* MapKit.framework */; };
+		80BEDE371EA4F09500C0C5D1 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 80BEDE361EA4F09500C0C5D1 /* prev.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		800CB5C91EA3475C00356366 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		800CB5CF1EA347C400356366 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold.png; sourceTree = "<group>"; };
 		80BEDE341EA3DFE900C0C5D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		80BEDE361EA4F09500C0C5D1 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				800CB5C71EA3475C00356366 /* Slide_Bkgrd1.png */,
 				800CB5C81EA3475C00356366 /* video.png */,
 				800CB5C91EA3475C00356366 /* camera.png */,
+				80BEDE361EA4F09500C0C5D1 /* prev.png */,
 				800CB5CF1EA347C400356366 /* gold.png */,
 			);
 			name = Images;
@@ -181,6 +184,7 @@
 				800CB5CB1EA3475C00356366 /* main.png in Resources */,
 				800CB5A01EA25E2D00356366 /* LaunchScreen.storyboard in Resources */,
 				800CB59D1EA25E2D00356366 /* Assets.xcassets in Resources */,
+				80BEDE371EA4F09500C0C5D1 /* prev.png in Resources */,
 				800CB5CD1EA3475C00356366 /* video.png in Resources */,
 				800CB5CE1EA3475C00356366 /* camera.png in Resources */,
 				800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */,

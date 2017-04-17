@@ -126,6 +126,17 @@
                                     <constraint firstAttribute="height" constant="27" id="ctJ-hm-WYm"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bs-OR-R4y">
+                                <rect key="frame" x="20" y="20" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="nMb-rR-9Bd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prev.png" translatesAutoresizingMaskIntoConstraints="NO" id="gRQ-kR-zyt">
+                                <rect key="frame" x="20" y="20" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -177,13 +188,24 @@
                                     <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="JdV-uq-CHd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prev.png" translatesAutoresizingMaskIntoConstraints="NO" id="vJU-LG-iyg">
+                                <rect key="frame" x="28" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEQ-4C-gvJ">
+                                <rect key="frame" x="28" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="AbU-TX-25N" kind="show" animates="NO" id="wMn-gk-rSj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tl-9l-c2A" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="912"/>
+            <point key="canvasLocation" x="773.91304347826087" y="911.41304347826099"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZOo-CF-cEu">
@@ -213,7 +235,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Wr-T1-Cix">
                                 <rect key="frame" x="0.0" y="101" width="414" height="465"/>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is users description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-1h-F58">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is user's description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-1h-F58">
                                 <rect key="frame" x="0.0" y="562" width="414" height="116"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -231,6 +253,17 @@
                                 <color key="textColor" red="0.2891327017722683" green="0.1573689510511159" blue="0.9976467490196228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prev.png" translatesAutoresizingMaskIntoConstraints="NO" id="dZD-PK-ls3">
+                                <rect key="frame" x="9" y="32" width="24" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zC-bz-kLO">
+                                <rect key="frame" x="9" y="28" width="24" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="2SU-nk-FV6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -255,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDa-vk-Zji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="911"/>
+            <point key="canvasLocation" x="28.985507246376812" y="910.59782608695662"/>
         </scene>
     </scenes>
     <resources>
@@ -264,5 +297,10 @@
         <image name="camera.png" width="256" height="256"/>
         <image name="gold.png" width="397" height="480"/>
         <image name="main.png" width="868" height="874"/>
+        <image name="prev.png" width="483" height="874"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wMn-gk-rSj"/>
+        <segue reference="2SU-nk-FV6"/>
+    </inferredMetricsTieBreakers>
 </document>
