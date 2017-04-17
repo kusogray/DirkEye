@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="775.36231884057975" y="34.239130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="AKO-Ki-frl">
             <objects>
-                <viewController id="NFW-63-9t3" customClass="ViewController" customModule="SnapEye" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NFW-63-9t3" customClass="ViewController2" customModule="SnapEye" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xuB-WG-LRW"/>
                         <viewControllerLayoutGuide type="bottom" id="k0p-8c-xqN"/>
@@ -187,15 +187,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao7-VT-B3y">
                                 <rect key="frame" x="119" y="597" width="137" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Be the eyes"/>
+                                <state key="normal" title="Submit Photo"/>
                                 <connections>
-                                    <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="JdV-uq-CHd"/>
+                                    <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="NJg-zg-tWU"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7b-HT-0Yo">
-                                <rect key="frame" x="30" y="88" width="315" height="490"/>
+                                <rect key="frame" x="30" y="88" width="96" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GE-Yr-uZi">
+                                <rect key="frame" x="30" y="109" width="96" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="aO8-Qz-8GV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -204,6 +211,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tl-9l-c2A" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add.png" id="nSs-Ye-fEQ">
+                    <rect key="frame" x="0.0" y="0.0" width="65" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
             <point key="canvasLocation" x="773.60000000000002" y="909.89505247376314"/>
         </scene>
@@ -293,6 +304,7 @@
     </scenes>
     <resources>
         <image name="Slide_Bkgrd1.png" width="1142" height="472"/>
+        <image name="add.png" width="300" height="300"/>
         <image name="blank_img.jpg" width="616" height="357"/>
         <image name="gold.png" width="397" height="480"/>
         <image name="main.png" width="868" height="874"/>
