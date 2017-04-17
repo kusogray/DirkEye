@@ -112,6 +112,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Sv7-Jy-sZk" id="3Bh-fd-saE"/>
+                                </connections>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" 10" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="blank_img.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GHv-Bc-I5e">
                                 <rect key="frame" x="337" y="515" width="57" height="22"/>
@@ -156,6 +159,9 @@
                             <constraint firstItem="A4v-ey-gSD" firstAttribute="leading" secondItem="Cfh-uX-4IV" secondAttribute="leading" id="wAK-my-ZVS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textBottom" destination="7Sv-yW-qPz" id="fQI-aw-IRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWO-Bt-Njv" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,7 +306,7 @@
         <image name="prev.png" width="483" height="874"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wMn-gk-rSj"/>
-        <segue reference="2SU-nk-FV6"/>
+        <segue reference="nMb-rR-9Bd"/>
+        <segue reference="IaH-3g-w8x"/>
     </inferredMetricsTieBreakers>
 </document>
