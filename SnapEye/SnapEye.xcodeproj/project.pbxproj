@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		35B532E91EA3589A0070EB8C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */; };
 		35B532EB1EA358B90070EB8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */; };
+		35B532EF1EA51AB20070EB8C /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B532EE1EA51AB20070EB8C /* add.png */; };
+		35B532F31EA5357E0070EB8C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B532F21EA5357E0070EB8C /* ViewController2.swift */; };
 		800CB5961EA25E2D00356366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5951EA25E2D00356366 /* AppDelegate.swift */; };
 		800CB5981EA25E2D00356366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5971EA25E2D00356366 /* ViewController.swift */; };
 		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		35B532EE1EA51AB20070EB8C /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = ../../../../add.png; sourceTree = "<group>"; };
+		35B532F21EA5357E0070EB8C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		800CB5921EA25E2D00356366 /* SnapEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		800CB5951EA25E2D00356366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		800CB5971EA25E2D00356366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			children = (
 				800CB5951EA25E2D00356366 /* AppDelegate.swift */,
 				800CB5971EA25E2D00356366 /* ViewController.swift */,
+				35B532F21EA5357E0070EB8C /* ViewController2.swift */,
 				800CB5991EA25E2D00356366 /* Main.storyboard */,
 				800CB59C1EA25E2D00356366 /* Assets.xcassets */,
 				800CB59E1EA25E2D00356366 /* LaunchScreen.storyboard */,
@@ -108,6 +113,7 @@
 				800CB5C81EA3475C00356366 /* video.png */,
 				800CB5C91EA3475C00356366 /* camera.png */,
 				80BEDE361EA4F09500C0C5D1 /* prev.png */,
+				35B532EE1EA51AB20070EB8C /* add.png */,
 				800CB5CF1EA347C400356366 /* gold.png */,
 			);
 			name = Images;
@@ -184,6 +190,7 @@
 				800CB5CB1EA3475C00356366 /* main.png in Resources */,
 				800CB5A01EA25E2D00356366 /* LaunchScreen.storyboard in Resources */,
 				800CB59D1EA25E2D00356366 /* Assets.xcassets in Resources */,
+				35B532EF1EA51AB20070EB8C /* add.png in Resources */,
 				80BEDE371EA4F09500C0C5D1 /* prev.png in Resources */,
 				800CB5CD1EA3475C00356366 /* video.png in Resources */,
 				800CB5CE1EA3475C00356366 /* camera.png in Resources */,
@@ -200,6 +207,7 @@
 			files = (
 				800CB5981EA25E2D00356366 /* ViewController.swift in Sources */,
 				800CB5961EA25E2D00356366 /* AppDelegate.swift in Sources */,
+				35B532F31EA5357E0070EB8C /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
