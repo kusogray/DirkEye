@@ -12,7 +12,7 @@
 		35B532F31EA5357E0070EB8C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B532F21EA5357E0070EB8C /* ViewController2.swift */; };
 		800CB5961EA25E2D00356366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5951EA25E2D00356366 /* AppDelegate.swift */; };
 		800CB5981EA25E2D00356366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5971EA25E2D00356366 /* ViewController.swift */; };
-		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; };
+		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; settings = {ASSET_TAGS = (2, ); }; };
 		800CB59D1EA25E2D00356366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800CB59C1EA25E2D00356366 /* Assets.xcassets */; };
 		800CB5A01EA25E2D00356366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB59E1EA25E2D00356366 /* LaunchScreen.storyboard */; };
 		800CB5CA1EA3475C00356366 /* blank_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5C51EA3475C00356366 /* blank_img.jpg */; };
@@ -154,6 +154,10 @@
 		800CB58A1EA25E2D00356366 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = whmou;
