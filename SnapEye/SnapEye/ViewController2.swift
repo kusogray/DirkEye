@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController2: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate  {
 
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
