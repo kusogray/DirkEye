@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import MapKit
+import Cloudinary
+
 
 class ViewController2: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate  {
@@ -17,7 +18,7 @@ UINavigationControllerDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //imageView.image = UIImage(named:"")
         for i in 0...5 {
             collectionOfViews?[i].image = #imageLiteral(resourceName: "add")
@@ -45,6 +46,29 @@ UINavigationControllerDelegate  {
         }
     }
 
+    @IBAction func UploadPhoto(sender: AnyObject){
+        print("image upload fucn start")
+        if let image = collectionOfViews?[0].image {
+            if let data = UIImageJPEGRepresentation(image, 0.8) {
+                
+                let config = CLDConfiguration(cloudName: "cloudName", apiKey: "CLDapiKey")
+                let cloudinary = CLDCloudinary(configuration: config)
+
+                let uploader = cloudinary.createUploader()
+                uploader.upload(data: data, uploadPreset: "CLDuploadPreset") { result, error in
+                    if let error = error {
+                        print(error)
+                    } else {
+ 
+                            print("Image uploaded to Cloudinary successfully")
+                        
+                    }
+                print("image upload fucn done")
+                
+                }
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
