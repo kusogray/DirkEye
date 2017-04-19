@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -206,7 +206,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit Photo"/>
                                 <connections>
-                                    <action selector="TakePhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="NJg-zg-tWU"/>
+                                    <action selector="UploadPhotoWithSender:" destination="NFW-63-9t3" eventType="touchDown" id="BLL-9o-7rj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7b-HT-0Yo">
@@ -389,7 +389,7 @@
         <image name="prev.png" width="483" height="874"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ErK-GH-mbJ"/>
         <segue reference="Qsk-i1-mXv"/>
-        <segue reference="c6y-ns-H5z"/>
     </inferredMetricsTieBreakers>
 </document>
