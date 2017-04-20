@@ -7,20 +7,24 @@
 //
 
 import UIKit
-import MapKit
+import Cloudinary
+
 
 class ViewController2: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate  {
 
-    @IBOutlet weak var imageView: UIImageView!
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet var collectionOfViews: Array<UIImageView>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //imageView.image = UIImage(named:"")
-        imageView.image = #imageLiteral(resourceName: "add")
+        for i in 0...5 {
+            collectionOfViews?[i].image = #imageLiteral(resourceName: "add")
+        }
+//        collectionOfViews[0].image = #imageLiteral(resourceName: "add")
+
         //imageView = UIImageView(image: UIImage(named: "add.png"))
 
         // Do any additional setup after loading the view.
@@ -30,16 +34,41 @@ UINavigationControllerDelegate  {
     @IBAction func TakePhoto(sender: AnyObject)
     {
         if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)){
-            
+            let button = sender as! UIButton
+            print("Button \(button.tag) was pressed!")
             let picker = UIImagePickerController()
             picker.delegate = self
             picker.sourceType = UIImagePickerControllerSourceType.camera
             picker.allowsEditing = true
+            picker.view.tag = button.tag
             self.present(picker, animated: true, completion: nil);
             
         }
     }
 
+    @IBAction func UploadPhoto(sender: AnyObject){
+        print("image upload fucn start")
+        if let image = collectionOfViews?[0].image {
+            if let data = UIImageJPEGRepresentation(image, 0.8) {
+                
+                let config = CLDConfiguration(cloudName: "cloudName", apiKey: "CLDapiKey")
+                let cloudinary = CLDCloudinary(configuration: config)
+
+                let uploader = cloudinary.createUploader()
+                uploader.upload(data: data, uploadPreset: "CLDuploadPreset") { result, error in
+                    if let error = error {
+                        print(error)
+                    } else {
+ 
+                            print("Image uploaded to Cloudinary successfully")
+                        
+                    }
+                print("image upload fucn done")
+                
+                }
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,11 +76,12 @@ UINavigationControllerDelegate  {
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        print("didFinishPickingImage")
+        print("didFinishPickingImage+")
+        print(picker.view.tag)
         
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        imageView.image = image
+        collectionOfViews?[picker.view.tag].image = image
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil) //save photo to album
         dismiss(animated: true, completion: nil)
     }
