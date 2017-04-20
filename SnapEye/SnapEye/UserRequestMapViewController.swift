@@ -108,21 +108,30 @@ MKMapViewDelegate {
                 center: center,
                 span: currentLocationSpan)
         
-//        print ( locationManager.location?.coordinate.latitude)
-//        print ( locationManager.location?.coordinate.longitude)
 
-        
-        //mapView.showsUserLocation = true
-        
-        //mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
-         //mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
         mapView.setRegion(currentRegion, animated: true)
-        //self.mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
+        
+        let gestureRecognizer = UILongPressGestureRecognizer(
+            target: self, action:(#selector(longPress)
+            )
+        )
+        gestureRecognizer.minimumPressDuration = 0.6
+        mapView.addGestureRecognizer(gestureRecognizer)
         
         // -------- Maps End------------ //
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    func longPress(gestureRecognizer: UILongPressGestureRecognizer) {
+        //let coordinate = mapView.centerCoordinate
+        let annotation = MKPointAnnotation()
+        var touchPoint = gestureRecognizer.location(in: mapView)
+        var newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+        annotation.coordinate = newCoordinates
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        mapView.addAnnotation(annotation)
     }
     
     // Print out the location to the console
