@@ -146,8 +146,8 @@ MKMapViewDelegate {
     var location: CLLocation!
     @IBAction func userLocatButtonAction(_ sender: Any) {
         self.mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
-        print ( String(self.mapView.userLocation.coordinate.latitude))
-        print ( String(self.mapView.userLocation.coordinate.longitude))
+        //print ( String(self.mapView.userLocation.coordinate.latitude))
+        //print ( String(self.mapView.userLocation.coordinate.longitude))
 
     }
     

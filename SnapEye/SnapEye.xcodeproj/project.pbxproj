@@ -10,7 +10,6 @@
 		35B532E91EA3589A0070EB8C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532E81EA3589A0070EB8C /* AssetsLibrary.framework */; };
 		35B532EB1EA358B90070EB8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B532EA1EA358B90070EB8C /* MobileCoreServices.framework */; };
 		35B532F31EA5357E0070EB8C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B532F21EA5357E0070EB8C /* ViewController2.swift */; };
-		3C411FB0D8096941C1DF9D06 /* Pods_SnapEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F625CC8AFF545A92B9FF36A /* Pods_SnapEye.framework */; };
 		800CB5961EA25E2D00356366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5951EA25E2D00356366 /* AppDelegate.swift */; };
 		800CB5981EA25E2D00356366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CB5971EA25E2D00356366 /* ViewController.swift */; };
 		800CB59B1EA25E2D00356366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800CB5991EA25E2D00356366 /* Main.storyboard */; settings = {ASSET_TAGS = (2, ); }; };
@@ -28,6 +27,8 @@
 		80BEDE351EA3DFE900C0C5D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BEDE341EA3DFE900C0C5D1 /* MapKit.framework */; };
 		80BEDE371EA4F09500C0C5D1 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 80BEDE361EA4F09500C0C5D1 /* prev.png */; };
 		80BEDE391EA64C4E00C0C5D1 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 80BEDE381EA64C4E00C0C5D1 /* add.png */; };
+		A543B97C1EB0C52000713EAA /* Pods_SnapEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F625CC8AFF545A92B9FF36A /* Pods_SnapEye.framework */; };
+		A5B52B981EB0D389004C1696 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B52B971EB0D389004C1696 /* camera-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,9 @@
 		80BEDE341EA3DFE900C0C5D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		80BEDE361EA4F09500C0C5D1 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
 		80BEDE381EA64C4E00C0C5D1 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		A543B9761EB0C52000713EAA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A543B9791EB0C52000713EAA /* Cloudinary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cloudinary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B52B971EB0D389004C1696 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,8 @@
 			files = (
 				35B532EB1EA358B90070EB8C /* MobileCoreServices.framework in Frameworks */,
 				80BEDE351EA3DFE900C0C5D1 /* MapKit.framework in Frameworks */,
+				A543B97C1EB0C52000713EAA /* Pods_SnapEye.framework in Frameworks */,
 				35B532E91EA3589A0070EB8C /* AssetsLibrary.framework in Frameworks */,
-				3C411FB0D8096941C1DF9D06 /* Pods_SnapEye.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,8 @@
 		800CB5891EA25E2D00356366 = {
 			isa = PBXGroup;
 			children = (
+				A543B9791EB0C52000713EAA /* Cloudinary.framework */,
+				A543B9761EB0C52000713EAA /* Alamofire.framework */,
 				80B9361B1EA689D2001636F3 /* UserRequestMapViewController.swift */,
 				800CB5A71EA2612C00356366 /* Images */,
 				800CB5941EA25E2D00356366 /* SnapEye */,
@@ -130,6 +136,7 @@
 				80BEDE361EA4F09500C0C5D1 /* prev.png */,
 				80BEDE381EA64C4E00C0C5D1 /* add.png */,
 				800CB5CF1EA347C400356366 /* gold.png */,
+				A5B52B971EB0D389004C1696 /* camera-icon.png */,
 				80B9361D1EA795D6001636F3 /* locate.png */,
 			);
 			name = Images;
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				800CB5CC1EA3475C00356366 /* Slide_Bkgrd1.png in Resources */,
+				A5B52B981EB0D389004C1696 /* camera-icon.png in Resources */,
 				800CB5CA1EA3475C00356366 /* blank_img.jpg in Resources */,
 				800CB5D01EA347C400356366 /* gold.png in Resources */,
 				80BEDE391EA64C4E00C0C5D1 /* add.png in Resources */,
